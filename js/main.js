@@ -1,0 +1,1 @@
+"use strict";var app=new App($('[data-container="portfolio"]')).bootstrap(projects);window.onpopstate=function(t){$.extend(app.path,app.resolvePath(window.location.pathname)),app.loadView(t.state.view_id,!0)};

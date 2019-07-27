@@ -1,0 +1,154 @@
+.view {
+  position: relative;
+  z-index: 10;
+}
+@media (min-width: 992px) {
+  .view {
+    position: absolute;
+  }
+}
+@media (max-width: 991px) {
+  .view--home {
+    padding: 45px 15px;
+  }
+}
+@media (min-width: 992px) {
+  .view--home {
+    max-width: 700px;
+    bottom: 10%;
+    left: 10%;
+  }
+}
+@media (min-width: 1921px) {
+  .view--home {
+    max-width: 1000px;
+  }
+}
+.view--home .description {
+  color: #FFFFFF;
+}
+@media (max-width: 991px) {
+  .view--home .description {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+.view--home .description .image {
+  -webkit-border-radius: 50%;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 50%;
+  -moz-background-clip: padding;
+  border-radius: 50%;
+  background-clip: padding-box;
+  overflow: hidden;
+  max-width: 300px;
+  margin: 0 auto 45px;
+  position: relative;
+}
+@media (min-width: 992px) {
+  .view--home .description .image {
+    display: none;
+  }
+}
+.view--home .description .image:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../images/decors/square_3x3.png');
+  z-index: 3;
+  zoom: 1;
+  filter: alpha(opacity=50);
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+}
+.view--home .description .image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.view--home .description .title {
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: 5px;
+  margin-bottom: 40px;
+  line-height: 1;
+}
+@media (max-width: 991px) {
+  .view--home .description .title {
+    text-align: center;
+  }
+}
+@media (min-width: 992px) {
+  .view--home .description .title {
+    font-size: 60px;
+  }
+}
+@media (min-width: 1201px) {
+  .view--home .description .title {
+    font-size: 80px;
+  }
+}
+@media (min-width: 1921px) {
+  .view--home .description .title {
+    font-size: 100px;
+  }
+}
+.view--home .description .body {
+  margin-bottom: 60px;
+  font-size: 16px;
+}
+@media (min-width: 992px) {
+  .view--home .description .body {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1201px) {
+  .view--home .description .body {
+    font-size: 25px;
+  }
+}
+@media (min-width: 1921px) {
+  .view--home .description .body {
+    font-size: 30px;
+  }
+}
+.view--home .description .body a {
+  color: #FFFFFF;
+}
+.view--home .description .body b {
+  font-size: 110%;
+}
+@media (max-width: 991px) {
+  .view--home .description .actions {
+    text-align: center;
+  }
+}
+.view--home .description .actions a {
+  background: rgba(43, 58, 64, 0.9);
+  color: #FFFFFF;
+  border: 2px solid #ECC98D;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+}
+@media (min-width: 992px) {
+  .view--home .description .actions a {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1201px) {
+  .view--home .description .actions a {
+    font-size: 25px;
+  }
+}
+@media (min-width: 1921px) {
+  .view--home .description .actions a {
+    font-size: 30px;
+  }
+}
